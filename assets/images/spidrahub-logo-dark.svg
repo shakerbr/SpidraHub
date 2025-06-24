@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200" height="60" viewBox="0 0 200 60" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Gradients for dark mode -->
+    <linearGradient id="primaryGradientDark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4A9EFF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#007BFF;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="accentGradientDark" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#FF6B5A;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFD700;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Drop shadow filter -->
+    <filter id="shadowDark" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#000000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  <!-- Hub Icon - Geometric Web Structure -->
+  <g id="hub-icon" transform="translate(10, 10)">
+    <!-- Outer ring -->
+    <circle cx="20" cy="20" r="18" fill="none" stroke="url(#primaryGradientDark)" stroke-width="1.5" opacity="0.8"/>
+    
+    <!-- Middle ring -->
+    <circle cx="20" cy="20" r="12" fill="none" stroke="url(#primaryGradientDark)" stroke-width="1.2" opacity="0.9"/>
+    
+    <!-- Inner ring -->
+    <circle cx="20" cy="20" r="6" fill="none" stroke="url(#accentGradientDark)" stroke-width="1"/>
+    
+    <!-- Radial spokes (web strands) -->
+    <g stroke="url(#primaryGradientDark)" stroke-width="1" opacity="0.8">
+      <!-- Horizontal -->
+      <line x1="2" y1="20" x2="38" y2="20"/>
+      <!-- Vertical -->
+      <line x1="20" y1="2" x2="20" y2="38"/>
+      <!-- Diagonal 1 -->
+      <line x1="7.27" y1="7.27" x2="32.73" y2="32.73"/>
+      <!-- Diagonal 2 -->
+      <line x1="32.73" y1="7.27" x2="7.27" y2="32.73"/>
+      <!-- Additional spokes for density -->
+      <line x1="9.51" y1="5.88" x2="30.49" y2="34.12" opacity="0.6"/>
+      <line x1="30.49" y1="5.88" x2="9.51" y2="34.12" opacity="0.6"/>
+      <line x1="5.88" y1="9.51" x2="34.12" y2="30.49" opacity="0.6"/>
+      <line x1="5.88" y1="30.49" x2="34.12" y2="9.51" opacity="0.6"/>
+    </g>
+    
+    <!-- Central hub -->
+    <circle cx="20" cy="20" r="3" fill="url(#accentGradientDark)"/>
+    
+    <!-- Connection nodes -->
+    <g fill="url(#primaryGradientDark)">
+      <circle cx="20" cy="2" r="1.5"/>
+      <circle cx="20" cy="38" r="1.5"/>
+      <circle cx="2" cy="20" r="1.5"/>
+      <circle cx="38" cy="20" r="1.5"/>
+      <circle cx="7.27" cy="7.27" r="1.2"/>
+      <circle cx="32.73" cy="32.73" r="1.2"/>
+      <circle cx="32.73" cy="7.27" r="1.2"/>
+      <circle cx="7.27" cy="32.73" r="1.2"/>
+    </g>
+  </g>
+  
+  <!-- Typography -->
+  <g id="text" transform="translate(60, 15)">
+    <!-- Spidra text -->
+    <text x="0" y="20" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" 
+          font-size="22" font-weight="700" fill="url(#primaryGradientDark)" 
+          filter="url(#shadowDark)">Spidra</text>
+    
+    <!-- Hub text with accent -->
+    <text x="75" y="20" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" 
+          font-size="22" font-weight="700" fill="url(#accentGradientDark)" 
+          filter="url(#shadowDark)">Hub</text>
+    
+    <!-- Tagline -->
+    <text x="0" y="38" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" 
+          font-size="9" font-weight="400" fill="#CCCCCC" opacity="0.9">Connected Technology Solutions</text>
+  </g>
+  
+  <!-- Subtle connecting line between icon and text -->
+  <line x1="50" y1="30" x2="58" y2="30" stroke="url(#accentGradientDark)" 
+        stroke-width="1" opacity="0.4"/>
+</svg>

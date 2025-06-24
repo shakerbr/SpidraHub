@@ -1,0 +1,198 @@
+.about-image .fa-spider {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.about-image .fa-spider {
+    transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    cursor: pointer;
+    transform-origin: center;
+}
+
+.about-image .fa-spider:focus,
+.about-image .fa-spider.running {
+    animation: spiderRunAway 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
+}
+
+@keyframes spiderRunAway {
+    0% {
+        transform: scale(1) rotate(var(--spider-from-rotation, 0deg)) 
+                   translateX(var(--spider-from-x, 0px)) 
+                   translateY(var(--spider-from-y, 0px));
+        opacity: 1;
+    }
+    20% {
+        transform: scale(1.2) rotate(calc(var(--spider-from-rotation, 0deg) + 45deg))
+                   translateX(var(--spider-from-x, 0px)) 
+                   translateY(var(--spider-from-y, 0px));
+        opacity: 0.8;
+    }
+    50% {
+        transform: scale(0.8) rotate(calc(var(--spider-from-rotation, 0deg) + 180deg))
+                   translateX(calc((var(--spider-from-x, 0px) + var(--spider-x, 0px)) / 2)) 
+                   translateY(calc((var(--spider-from-y, 0px) + var(--spider-y, 0px)) / 2));
+        opacity: 0.6;
+    }
+    80% {
+        transform: scale(1.1) rotate(calc(var(--spider-rotation, 360deg) - 90deg))
+                   translateX(var(--spider-x, 0px)) 
+                   translateY(var(--spider-y, 0px));
+        opacity: 0.9;
+    }
+    100% {
+        transform: scale(1) rotate(var(--spider-rotation, 360deg)) 
+                   translateX(var(--spider-x, 0px)) 
+                   translateY(var(--spider-y, 0px));
+        opacity: 1;
+    }
+}
+
+
+/* Enhanced Spider Interaction Styles */
+.fa-spider {
+    position: relative;
+    display: inline-block;
+    transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    cursor: pointer;
+    transform-origin: center;
+    user-select: none;
+    outline: none;
+}
+
+.fa-spider:focus {
+    outline: 2px solid var(--accent-gold);
+}
+
+/* Ensure hover effects work with positioned spiders */
+.fa-spider:not(.running):hover {
+    filter: drop-shadow(0 0 8px var(--accent-red));
+    transition: filter 0.3s ease;
+}
+
+.fa-spider:not(.running):active {
+    filter: drop-shadow(0 0 12px var(--accent-red));
+    transition: filter 0.1s ease;
+}
+
+/* Container positioning for spider movement */
+.about-image, 
+.blog-image, 
+.contact-icon, 
+.card-icon {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Smooth spider movement */
+.fa-spider.running {
+    animation: spiderRunAway 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
+}
+
+/* Hide default focus outline for mouse users but keep for keyboard */
+.fa-spider:focus:not(:focus-visible) {
+    outline: none;
+}
+
+/* Enhanced focus for keyboard users */
+.fa-spider:focus-visible {
+    outline: 3px solid var(--accent-gold);
+    outline-offset: 4px;
+    border-radius: 50%;
+    background: rgba(251, 191, 36, 0.1);
+}
+
+/* Speech Bubble for Spider */
+.spider-speech {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(255, 255, 255, 0.95);
+    border: 2px solid var(--accent-red, #dc2626);
+    border-radius: 20px;
+    padding: 8px 15px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--primary-blue, #0f172a);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transform: translateX(-50%) translateY(20px);
+    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    z-index: 10;
+    pointer-events: none;
+    max-width: 200px;
+    white-space: nowrap;
+}
+
+.spider-speech::before {
+    content: '';
+    position: absolute;
+    top: -8px;
+    left: 20px;
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid var(--accent-red, #dc2626);
+}
+
+.spider-speech::after {
+    content: '';
+    position: absolute;
+    top: -6px;
+    left: 21px;
+    width: 0;
+    height: 0;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 7px solid rgba(255, 255, 255, 0.95);
+}
+
+.spider-speech.show {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+}
+
+.spider-speech .spider-avatar {
+    width: 20px;
+    height: 20px;
+    background: var(--gradient-primary, linear-gradient(135deg, #0f172a 0%, #1e40af 100%));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 12px;
+    flex-shrink: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.spider-speech .speech-text {
+    color: var(--primary-blue, #0f172a);
+    font-weight: 600;
+    font-size: 13px;
+}
+
+/* Animation for speech bubble appearance */
+@keyframes speechBubbleBounce {
+    0% {
+        opacity: 0;
+        transform: translateX(-50%) translateY(30px) scale(0.8);
+    }
+    60% {
+        opacity: 1;
+        transform: translateX(-50%) translateY(-5px) scale(1.05);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(-50%) translateY(0) scale(1);
+    }
+}
+
+.spider-speech.bounce {
+    animation: speechBubbleBounce 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
+}

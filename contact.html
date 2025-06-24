@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact SpidraHub - Get in touch for web development services and project inquiries">
+    <meta name="keywords" content="contact spidrahub, web development inquiry, project consultation">
+    <meta name="author" content="SpidraHub">
+    <title>Contact Us - SpidraHub</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.svg">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+    <!-- Spider Web Loader -->
+    <div class="page-loader" id="page-loader">
+        <div class="spider-web-loader">
+            <div class="web-strand"></div>
+            <div class="web-strand"></div>
+            <div class="web-strand"></div>
+            <div class="web-strand"></div>
+            <div class="web-strand"></div>
+            <div class="web-strand"></div>
+            <div class="web-strand"></div>
+            <div class="web-strand"></div>
+            <div class="spider">🕷️</div>
+        </div>
+        <div class="loader-text">Weaving the web...</div>
+    </div>
+    
+    <!-- Skip Link for Accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav-container">
+            <a href="index.html" class="logo"><img src="assets/images/spidrahub-icon.svg" alt="SpidraHub Logo">SpidraHub</a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
+                <li><a href="contact.html" class="nav-link active">Contact</a></li>
+            </ul>
+            <button class="menu-toggle" aria-label="Toggle mobile menu">☰</button>
+        </nav>
+    </header>
+
+    <main id="main-content" class="main-content">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Get in Touch</h1>
+                <p>Ready to start your next project? Let's discuss how we can help bring your vision to life</p>
+            </div>
+        </section>
+
+        <!-- Contact Form & Info -->
+        <section class="section">
+            <div class="container">
+                <div class="contact-content">
+                    <div class="contact-form">
+                        <h2>Send us a Message</h2>
+                        <p style="color: var(--text-secondary); margin-bottom: 2rem;">
+                            Fill out the form below and we'll get back to you within 24 hours. For urgent matters, feel free to call us directly.
+                        </p>
+                        
+                        <form id="contact-form">
+                            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                                <div class="form-group">
+                                    <label for="firstName">First Name *</label>
+                                    <input type="text" id="firstName" name="firstName" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="lastName">Last Name *</label>
+                                    <input type="text" id="lastName" name="lastName" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="company">Company/Organization</label>
+                                <input type="text" id="company" name="company">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="service">Service Interested In</label>
+                                <select id="service" name="service" style="width: 100%; padding: 0.8rem; border: 2px solid var(--border-color); border-radius: 8px; font-size: 1rem;">
+                                    <option value="">Select a service</option>
+                                    <option value="web-development">Web Development</option>
+                                    <option value="ui-ux-design">UI/UX Design</option>
+                                    <option value="mobile-development">Mobile Development</option>
+                                    <option value="performance-optimization">Performance Optimization</option>
+                                    <option value="security-maintenance">Security & Maintenance</option>
+                                    <option value="cloud-solutions">Cloud Solutions</option>
+                                    <option value="consultation">Consultation</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="budget">Project Budget Range</label>
+                                <select id="budget" name="budget" style="width: 100%; padding: 0.8rem; border: 2px solid var(--border-color); border-radius: 8px; font-size: 1rem;">
+                                    <option value="">Select budget range</option>
+                                    <option value="under-5k">Under $5,000</option>
+                                    <option value="5k-15k">$5,000 - $15,000</option>
+                                    <option value="15k-30k">$15,000 - $30,000</option>
+                                    <option value="30k-50k">$30,000 - $50,000</option>
+                                    <option value="over-50k">Over $50,000</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="timeline">Project Timeline</label>
+                                <select id="timeline" name="timeline" style="width: 100%; padding: 0.8rem; border: 2px solid var(--border-color); border-radius: 8px; font-size: 1rem;">
+                                    <option value="">Select timeline</option>
+                                    <option value="asap">ASAP</option>
+                                    <option value="1-month">Within 1 month</option>
+                                    <option value="3-months">Within 3 months</option>
+                                    <option value="6-months">Within 6 months</option>
+                                    <option value="flexible">Flexible</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Project Details *</label>
+                                <textarea id="message" name="message" rows="6" required placeholder="Tell us about your project, goals, and any specific requirements..."></textarea>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label style="display: flex; align-items: center; gap: 0.5rem; font-weight: normal;">
+                                    <input type="checkbox" required style="width: auto;">
+                                    I agree to the <a href="#privacy" style="color: var(--accent-red);">Privacy Policy</a> and <a href="#terms" style="color: var(--accent-red);">Terms of Service</a>
+                                </label>
+                            </div>
+                            
+                            <button type="submit" class="submit-btn">Send Message</button>
+                        </form>
+                    </div>
+                    
+                    <div class="contact-info">
+                        <h2>Contact Information</h2>
+                        <p style="color: var(--text-secondary); margin-bottom: 2rem;">
+                            We're here to help! Reach out through any of the methods below, and we'll get back to you as soon as possible.
+                        </p>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div class="contact-text">
+                                <h4>Our Office</h4>
+                                <p>123 Tech Street<br>Digital City, DC 12345<br>United States</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
+                            <div class="contact-text">
+                                <h4>Phone Numbers</h4>
+                                <p>Main: <a href="tel:+9647825837179">+964 (782) 583-7179</a><br>Support: <a href="tel:+9647517027651">+964 (751) 702-7651</a><br>Emergency: <a href="tel:+9647763558513">+964 (776) 355-8513</a></p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                            <div class="contact-text">
+                                <h4>Email Addresses</h4>
+                                <p>General: <a href="mailto:contact@spidrahub.com">contact@spidrahub.com</a><br>Projects: <a href="mailto:info@spidrahub.com">info@spidrahub.com</a><br>Support: <a href="mailto:dev@spidrahub.com">dev@spidrahub.com</a></p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-clock"></i></div>
+                            <div class="contact-text">
+                                <h4>Business Hours</h4>
+                                <p>Monday - Friday: 9:00 AM - 6:00 PM EST<br>Saturday: 10:00 AM - 4:00 PM EST<br>Sunday: Closed</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-comments"></i></div>
+                            <div class="contact-text">
+                                <h4>Live Chat</h4>
+                                <p>Available during business hours<br>Average response time: 5 minutes</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="section services">
+            <div class="container">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <div class="cards-grid">
+                    <div class="card">
+                        <h3>How long does a typical project take?</h3>
+                        <p>Project timelines vary based on complexity and scope. Simple websites typically take 2-4 weeks, while complex web applications can take 2-6 months. We'll provide a detailed timeline during our initial consultation.</p>
+                    </div>
+                    
+                    <div class="card">
+                        <h3>What is your development process?</h3>
+                        <p>We follow a structured 4-phase process: Discovery & Planning, Design & Wireframing, Development & Testing, and Launch & Optimization. You'll receive regular updates throughout each phase.</p>
+                    </div>
+                    
+                    <div class="card">
+                        <h3>Do you provide ongoing support?</h3>
+                        <p>Yes! We offer various maintenance and support packages to keep your website secure, updated, and running smoothly. Our support includes regular backups, security monitoring, and content updates.</p>
+                    </div>
+                    
+                    <div class="card">
+                        <h3>Can you work with our existing systems?</h3>
+                        <p>Absolutely! We have experience integrating with various existing systems, APIs, and databases. We'll analyze your current setup and recommend the best integration approach.</p>
+                    </div>
+                    
+                    <div class="card">
+                        <h3>What technologies do you use?</h3>
+                        <p>We use modern, industry-standard technologies including React, Vue.js, Node.js, PHP, Python, and cloud platforms like AWS and Google Cloud. We choose the best tech stack for each project.</p>
+                    </div>
+                    
+                    <div class="card">
+                        <h3>Do you offer training?</h3>
+                        <p>Yes! We provide comprehensive training sessions and documentation to help your team manage and update your website independently. We also offer ongoing consultation as needed.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Office Hours & Response Times -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">When to Expect a Response</h2>
+                <div class="cards-grid">
+                    <div class="card">
+                        <div class="card-icon"><i class="fas fa-bolt"></i></div>
+                        <h3>Emergency Support</h3>
+                        <p>Critical issues affecting your live website: Within 1 hour during business hours, within 4 hours outside business hours.</p>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-icon"><i class="fas fa-phone-alt"></i></div>
+                        <h3>Phone Calls</h3>
+                        <p>Direct phone calls are answered immediately during business hours. For after-hours calls, leave a message and we'll respond first thing the next business day.</p>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-icon"><i class="fas fa-envelope"></i></div>
+                        <h3>Email Inquiries</h3>
+                        <p>General inquiries and project discussions: Within 24 hours on business days. We aim to respond to most emails within 4-6 hours.</p>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-icon"><i class="fas fa-file-alt"></i></div>
+                        <h3>Project Proposals</h3>
+                        <p>For new project inquiries, we'll send a detailed proposal within 48-72 hours after our initial consultation call.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Map Section (Placeholder) -->
+        <section class="section services">
+            <div class="container">
+                <h2 class="section-title">Visit Our Office</h2>
+                <div class="map-container">
+                    <iframe
+                        src="https://www.openstreetmap.org/export/embed.html?bbox=-73.9826,40.7644,-73.9497,40.8007&amp;layer=mapnik&amp;marker=40.7829,-73.9654"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="Central Park Map"
+                    ></iframe>
+                </div>
+                <div style="text-align: center;">
+                    <h3>Located in the Heart of Digital City</h3>
+                    <p style="color: var(--text-secondary); margin-top: 1rem;">
+                        Our office is conveniently located in the tech district, easily accessible by public transportation. 
+                        Visitor parking is available on-site. Please call ahead to schedule an in-person meeting.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>SpidraHub</h3>
+                    <p>Your trusted partner for web development excellence. We create digital experiences that inspire and engage.</p>                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link" aria-label="X (Twitter)"><i class="fab fa-x-twitter"></i></a>
+                        <a href="#" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <p><a href="services.html">Web Development</a></p>
+                    <p><a href="services.html">UI/UX Design</a></p>
+                    <p><a href="services.html">Mobile Development</a></p>
+                    <p><a href="services.html">Performance Optimization</a></p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Company</h3>
+                    <p><a href="about.html">About Us</a></p>
+                    <p><a href="blog.html">Blog</a></p>
+                    <p><a href="contact.html">Contact</a></p>
+                    <p><a href="#careers">Careers</a></p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p>123 Tech Street<br>Digital City, DC 12345</p>
+                    <p>Phone: <a href="tel:+9647825837179">+964 (782) 583-7179</a></p>
+                    <p>Email: <a href="mailto:contact@spidrahub.com">contact@spidrahub.com</a></p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 SpidraHub. All rights reserved. | <a href="#privacy">Privacy Policy</a> | <a href="#terms">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
